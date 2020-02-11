@@ -13,12 +13,12 @@ public class WindChill {
 		Scanner userInput = new Scanner(System.in);
 		
 		System.out.println("Please input wind temprature in Degrees F:"); 					// Print a request for wind temp.
-		double windTemp=userInput.nextInt(); 							  					// Declare wind temp. and initialize /w keyboard input
+		double windTemp=userInput.nextDouble(); 							  					// Declare wind temp. and initialize /w keyboard input
 		System.out.println("You entered: " + windTemp + " degrees F.");						// Print back wind temp. to varify input.
 			
 		
 		System.out.println("Please input wind speed in miles per hour:"); // Request wind speed.
-		double windSpeed=userInput.nextInt(); 							  					// declare wind speed and initialize /w keyboard input.
+		double windSpeed=userInput.nextDouble(); 							  					// declare wind speed and initialize /w keyboard input.
 		
 		System.out.println("You entered: " + windSpeed+ "ml/h.");	  	 					// Print back wind speed to varify input.
 		windSpeed=Math.pow(windSpeed, 0.16); 												// Set windSpeed to variable used in equation.
